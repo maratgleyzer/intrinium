@@ -17,9 +17,6 @@ module Intrinium
   CONFIG_FILE = "./lib/intrinium.config"
 
 
-
-
-
 #####################################
 ##intrinio service connection adapter
 ##finds user and pass in config file
@@ -80,16 +77,6 @@ module Intrinium
   end
 
 
-
-
-
-
-
-
-
-
-
-
   class COMPANIES
 
   	def all(adapter, page_size, page_number, pages)
@@ -125,15 +112,6 @@ module Intrinium
     end #end all
 
 
-
-
-
-
-
-
-
-
-
     def one(adapter, ticker)
 
 	    result = adapter.connection.get "#{COMPANIES_URI}?#{TICKER_KEY}=#{ticker}"
@@ -144,14 +122,7 @@ module Intrinium
 
   	end
   
+
   end
-
-
-
-
-
-
-
-
 
 end
